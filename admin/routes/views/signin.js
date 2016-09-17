@@ -1,4 +1,4 @@
-var session = require('../../../lib/session');
+User = keystone.list(keystone.get('user model'));
 var url = require('url');
 
 exports = module.exports = function(req, res) {
@@ -9,7 +9,8 @@ exports = module.exports = function(req, res) {
 		keystone.render(req, res, 'signin', {
 			submitted: req.body,
 			from: req.query.from,
-			logo: keystone.get('signin logo')
+			logo: keystone.get('signin logo'),
+			sendResetLink: (User.schema.methods.sendResetPassword) ? keystone.get('resetpassword url') : false
 		});
 	}
 
@@ -51,7 +52,7 @@ exports = module.exports = function(req, res) {
 			renderView();
 		};
 
-		session.signin(req.body, req, res, onSuccess, onFail);
+		keystone.session.signin(req.body, req, res, onSuccess, onFail);
 
 	} else {
 		renderView();
