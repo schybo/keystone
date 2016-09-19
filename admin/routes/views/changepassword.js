@@ -1,7 +1,8 @@
 'use strict';
-var keystone = require('../../');
 
 module.exports = function(req, res) {
+	var keystone = req.keystone;
+
 	function renderView(data) {
 		keystone.render(req, res, 'changepassword', {
 			user: data.user,

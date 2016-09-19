@@ -1,11 +1,11 @@
-User = keystone.list(keystone.get('user model'));
-var url = require('url');
+var keystone = require('../../../'),
+	User = keystone.list(keystone.get('user model'));
+	url = require('url');
 
 exports = module.exports = function(req, res) {
 
-	var keystone = req.keystone;
-	
 	function renderView() {
+		console.log(User);
 		keystone.render(req, res, 'signin', {
 			submitted: req.body,
 			from: req.query.from,

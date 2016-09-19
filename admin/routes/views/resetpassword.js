@@ -1,6 +1,5 @@
-var keystone = require('../../');
-
 exports = module.exports = function(req, res) {
+	var keystone = req.keystone;
 
 	var infoMessage = 'If we found a corresponding user, you\'ll receive an email with instructions on how to reset your password';
 
@@ -26,7 +25,7 @@ exports = module.exports = function(req, res) {
 
 		keystone.user.attemptResetMail(req.body, function(err) {
 			if (err) {
-				req.flash('error', 'There was an error with your request, please try again.');
+				req.flash('error', 'There was an error with your request boohoo, please try again.');
 			} else {
 				req.flash('success', infoMessage);
 			}

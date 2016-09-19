@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/schybo/keystone.git"
+    "url": "git+https://github.com/schybo/keystone.git"
   },
   "dependencies": {
     "async": "^1.5.2",
@@ -103,7 +103,9 @@
     "pikaday": "global.Pikaday",
     "moment": "global.moment"
   },
-  "author": "Brent Scheibelhut",
+  "author": {
+    "name": "Brent Scheibelhut"
+  },
   "homepage": "http://keystonejs.com/",
   "license": "MIT",
   "keywords": [
@@ -119,7 +121,6 @@
     "website",
     "forms"
   ],
-  "readmeFilename": "README.md",
   "gitHead": "ef3fd612285315ea8e12f68da4c8d6031e2c7fe7",
   "bugs": {
     "url": "https://github.com/schybo/keystone/issues"
@@ -138,5 +139,31 @@
   "engines": {
     "node": ">= 0.10.28",
     "npm": ">= 1.4.9"
-  }
+  },
+  "_id": "keystone-password-reset@0.3.22",
+  "_shasum": "b8e10669ff98106583d91735d22448818557291e",
+  "_from": "keystone-password-reset@0.3.22",
+  "_npmVersion": "2.8.4",
+  "_nodeVersion": "0.10.30",
+  "_npmUser": {
+    "name": "schybo",
+    "email": "brent.scheibelhut@gmail.com"
+  },
+  "dist": {
+    "shasum": "b8e10669ff98106583d91735d22448818557291e",
+    "tarball": "https://registry.npmjs.org/keystone-password-reset/-/keystone-password-reset-0.3.22.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "schybo",
+      "email": "brent.scheibelhut@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/keystone-password-reset-0.3.22.tgz_1474120615695_0.25507716927677393"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/keystone-password-reset/-/keystone-password-reset-0.3.22.tgz",
+  "readme": "ERROR: No README data found!"
 }
